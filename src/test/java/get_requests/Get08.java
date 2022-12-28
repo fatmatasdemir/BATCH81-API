@@ -92,6 +92,7 @@ public class Get08 extends JsonplaceholderBaseUrl {
 //Do Assertion
         Map<String, Object> actualData = response.as(HashMap.class);//De-Serialization
         System.out.println("actualData = " + actualData);
+    /////////
         assertEquals(expectedData.get("userId"),actualData.get("userId"));
         assertEquals(expectedData.get("title"),actualData.get("title"));
         assertEquals(expectedData.get("completed"),actualData.get("completed"));
